@@ -108,7 +108,7 @@ gem 'hamlit', '~> 2.8.8'
 
 # Files attachments
 gem 'carrierwave', '~> 1.2'
-gem 'mini_magick'
+gem 'mini_magick', '>= 4.9.4'
 
 # Drag and Drop UI
 gem 'dropzonejs-rails', '~> 0.7.1'
