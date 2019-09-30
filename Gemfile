@@ -347,7 +347,7 @@ group :development, :test do
 
   gem 'capybara', '~> 2.15'
   gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'selenium-webdriver', '~> 3.12'
+  gem 'selenium-webdriver', '~> 3.12', '>= 3.12.0'
 
   gem 'spring', '~> 2.0.0'
   gem 'spring-commands-rspec', '~> 1.0.4'
@@ -365,7 +365,7 @@ group :development, :test do
 
   gem 'benchmark-ips', '~> 2.3.0', require: false
 
-  gem 'license_finder', '~> 3.1', require: false
+  gem 'license_finder', '~> 3.1', '>= 3.1.1', require: false
   gem 'knapsack', '~> 1.16'
 
   gem 'activerecord_sane_schema_dumper', gem_versions['activerecord_sane_schema_dumper']
