@@ -107,7 +107,7 @@ gem 'kaminari', '~> 1.0'
 gem 'hamlit', '~> 2.8.8'
 
 # Files attachments
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 1.3', '>= 1.3.2'
 gem 'mini_magick'
 
 # Drag and Drop UI
