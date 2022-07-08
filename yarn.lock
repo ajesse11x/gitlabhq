@@ -1302,9 +1302,10 @@ bl@~1.1.2:
   dependencies:
     readable-stream "~2.0.5"
 
-blackst0ne-mermaid@^7.1.0-fixed:
-  version "7.1.0-fixed"
-  resolved "https://registry.yarnpkg.com/blackst0ne-mermaid/-/blackst0ne-mermaid-7.1.0-fixed.tgz#3707b3a113d78610e3068e18a588f46b4688de49"
+blackst0ne-mermaid@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/blackst0ne-mermaid/-/blackst0ne-mermaid-7.1.0.tgz#4d0b455f3a9481ab3cf80225a328d8e0e46c4d12"
+  integrity sha512-dlbSs51yfRZkvws+EP9f+rhvrgDeFbXuiZ8+rzUEvu5ljS0Nu8E0CHcB1vcu/Fsyp1HakS064po5e6fEMKLJOA==
   dependencies:
     d3 "3.5.17"
     dagre-d3-renderer "^0.4.24"
