@@ -12,7 +12,7 @@ gem_versions['rails-i18n']                      = rails5? ? '~> 5.1'   : '~> 4.0
 
 source 'https://rubygems.org'
 
-gem 'rails', gem_versions['rails']
+gem 'rails', '>= 5.2.8.1', gem_versions['rails']
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Responders respond_to and respond_with
@@ -21,7 +21,7 @@ gem 'responders', '~> 2.0'
 gem 'sprockets', '~> 3.7.0'
 
 # Default values for AR models
-gem 'default_value_for', gem_versions['default_value_for']
+gem 'default_value_for', '>= 3.1.0', gem_versions['default_value_for']
 
 # Supported DBs
 gem 'mysql2', '~> 0.4.10', group: :mysql
@@ -101,7 +101,7 @@ gem 'graphiql-rails', '~> 1.4.10'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
 # HAML
 gem 'hamlit', '~> 2.8.8'
@@ -111,7 +111,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'mini_magick'
 
 # Drag and Drop UI
-gem 'dropzonejs-rails', '~> 0.7.1'
+gem 'dropzonejs-rails', '~> 0.7.2'
 
 # for backups
 gem 'fog-aws', '~> 2.0.1'
@@ -165,7 +165,7 @@ end
 gem 'state_machines-activerecord', '~> 0.5.1'
 
 # Issue tags
-gem 'acts-as-taggable-on', '~> 5.0'
+gem 'acts-as-taggable-on', '~> 5.0', '>= 5.0.0'
 
 # Background jobs
 gem 'sidekiq', '~> 5.1'
@@ -283,7 +283,7 @@ gem 'premailer-rails', '~> 1.9.7'
 gem 'ruby_parser', '~> 3.8', require: false
 gem 'rails-i18n', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.1'
@@ -368,7 +368,7 @@ group :development, :test do
   gem 'license_finder', '~> 3.1', require: false
   gem 'knapsack', '~> 1.16'
 
-  gem 'activerecord_sane_schema_dumper', gem_versions['activerecord_sane_schema_dumper']
+  gem 'activerecord_sane_schema_dumper', '>= 1.0', gem_versions['activerecord_sane_schema_dumper']
 
   gem 'stackprof', '~> 0.2.10', require: false
 
@@ -383,7 +383,7 @@ group :test do
   gem 'json-schema', '~> 2.8.0'
   gem 'webmock', '~> 2.3.2'
   gem 'rails-controller-testing' if rails5? # Rails5 only gem.
-  gem 'test_after_commit', '~> 1.1' unless rails5? # Remove this gem when migrated to rails 5.0. It's been integrated to rails 5.0.
+  gem 'test_after_commit', '~> 1.1', '>= 1.1.0' # Remove this gem when migrated to rails 5.0. It's been integrated to rails 5.0.
   gem 'sham_rack', '~> 1.3.6'
   gem 'concurrent-ruby', '~> 1.0.5'
   gem 'test-prof', '~> 0.2.5'
