@@ -424,7 +424,7 @@ gem 'gitaly-proto', '~> 0.113.0', require: 'gitaly'
 gem 'grpc', '~> 1.11.0'
 
 # Locked until https://github.com/google/protobuf/issues/4210 is closed
-gem 'google-protobuf', '= 3.5.1'
+gem 'google-protobuf', '= 3.19.6'
 
 gem 'toml-rb', '~> 1.0.0', require: false
 
