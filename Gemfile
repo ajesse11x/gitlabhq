@@ -18,7 +18,7 @@ gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 # Responders respond_to and respond_with
 gem 'responders', '~> 2.0'
 
-gem 'sprockets', '~> 3.7.0'
+gem 'sprockets', '~> 4.2.0'
 
 # Default values for AR models
 gem 'default_value_for', gem_versions['default_value_for']
@@ -111,7 +111,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'mini_magick'
 
 # Drag and Drop UI
-gem 'dropzonejs-rails', '~> 0.7.1'
+gem 'dropzonejs-rails', '~> 0.7.2'
 
 # for backups
 gem 'fog-aws', '~> 2.0.1'
@@ -261,7 +261,7 @@ gem 'chronic_duration', '~> 0.10.6'
 gem 'webpack-rails', '~> 0.9.10'
 gem 'rack-proxy', '~> 0.6.0'
 
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails', '~> 6.0.0'
 gem 'uglifier', '~> 2.7.2'
 
 gem 'addressable', '~> 2.5.2'
@@ -283,7 +283,7 @@ gem 'premailer-rails', '~> 1.9.7'
 gem 'ruby_parser', '~> 3.8', require: false
 gem 'rails-i18n', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.1'
