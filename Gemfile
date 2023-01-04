@@ -177,7 +177,7 @@ gem 'sidekiq-limit_fetch', '~> 3.4', require: false
 gem 'rufus-scheduler', '~> 3.4'
 
 # HTTP requests
-gem 'httparty', '~> 0.13.3'
+gem 'httparty', '~> 0.21.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -206,7 +206,7 @@ gem 'redis', '~> 3.2'
 gem 'connection_pool', '~> 2.0'
 
 # HipChat integration
-gem 'hipchat', '~> 1.5.0'
+gem 'hipchat', '~> 1.5.2'
 
 # JIRA integration
 gem 'jira-ruby', '~> 1.4'
@@ -365,7 +365,7 @@ group :development, :test do
 
   gem 'benchmark-ips', '~> 2.3.0', require: false
 
-  gem 'license_finder', '~> 3.1', require: false
+  gem 'license_finder', '~> 3.1', '>= 3.1.1', require: false
   gem 'knapsack', '~> 1.16'
 
   gem 'activerecord_sane_schema_dumper', gem_versions['activerecord_sane_schema_dumper']
