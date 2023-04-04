@@ -12,54 +12,54 @@ gem_versions['rails-i18n']                      = rails5? ? '~> 5.1'   : '~> 4.0
 
 source 'https://rubygems.org'
 
-gem 'rails', gem_versions['rails']
+gem 'rails', '>= 6.1.7.3', gem_versions['rails']
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
-gem 'sprockets', '~> 3.7.0'
+gem 'sprockets', '~> 4.2.0'
 
 # Default values for AR models
-gem 'default_value_for', gem_versions['default_value_for']
+gem 'default_value_for', '>= 3.4.0', gem_versions['default_value_for']
 
 # Supported DBs
 gem 'mysql2', '~> 0.4.10', group: :mysql
 gem 'pg', '~> 0.18.2', group: :postgres
 
 gem 'rugged', '~> 0.27'
-gem 'grape-path-helpers', '~> 1.0'
+gem 'grape-path-helpers', '~> 1.1', '>= 1.1.0'
 
 gem 'faraday', '~> 0.12'
 
 # Authentication libraries
-gem 'devise', '~> 4.4'
-gem 'doorkeeper', '~> 4.3'
-gem 'doorkeeper-openid_connect', '~> 1.5'
-gem 'omniauth', '~> 1.8'
+gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'doorkeeper', '~> 4.4', '>= 4.4.0'
+gem 'doorkeeper-openid_connect', '~> 1.5', '>= 1.5.4'
+gem 'omniauth', '~> 2.1', '>= 2.1.0'
 gem 'omniauth-auth0', '~> 2.0.0'
 gem 'omniauth-azure-oauth2', '~> 0.0.9'
 gem 'omniauth-cas3', '~> 1.1.4'
 gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.3'
-gem 'omniauth-gitlab', '~> 1.0.2'
+gem 'omniauth-github', '~> 2.0', '>= 2.0.0'
+gem 'omniauth-gitlab', '~> 3.0.0'
 gem 'omniauth-google-oauth2', '~> 0.5.3'
 gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-shibboleth', '~> 1.3.0'
-gem 'omniauth-twitter', '~> 1.4'
-gem 'omniauth_crowd', '~> 2.2.0'
+gem 'omniauth-twitter', '~> 1.4', '>= 1.4.0'
+gem 'omniauth_crowd', '~> 2.2.3'
 gem 'omniauth-authentiq', '~> 0.3.3'
-gem 'rack-oauth2', '~> 1.2.1'
+gem 'rack-oauth2', '~> 1.2.3'
 gem 'jwt', '~> 1.5.6'
 
 # Spam and anti-bot protection
-gem 'recaptcha', '~> 3.0', require: 'recaptcha/rails'
+gem 'recaptcha', '~> 3.0', '>= 3.0.0', require: 'recaptcha/rails'
 gem 'akismet', '~> 2.0'
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 3.0.0'
+gem 'devise-two-factor', '~> 4.0.2'
 gem 'rqrcode-rails3', '~> 0.1.7'
 gem 'attr_encrypted', '~> 3.1.0'
 gem 'u2f', '~> 0.2.1'
@@ -76,12 +76,12 @@ gem 'gpgme'
 # LDAP Auth
 # GitLab fork with several improvements to original library. For full list of changes
 # see https://github.com/intridea/omniauth-ldap/compare/master...gitlabhq:master
-gem 'gitlab_omniauth-ldap', '~> 2.0.4', require: 'omniauth-ldap'
+gem 'gitlab_omniauth-ldap', '~> 2.2.0', require: 'omniauth-ldap'
 gem 'net-ldap'
 
 # Git Wiki
 # Required manually in config/initializers/gollum.rb to control load order
-gem 'gitlab-gollum-lib', '~> 4.2', require: false
+gem 'gitlab-gollum-lib', '~> 4.2', '>= 4.2.7.5', require: false
 
 gem 'gitlab-gollum-rugged_adapter', '~> 0.4.4', require: false
 
@@ -89,9 +89,9 @@ gem 'gitlab-gollum-rugged_adapter', '~> 0.4.4', require: false
 gem 'github-linguist', '~> 5.3.3', require: 'linguist'
 
 # API
-gem 'grape', '~> 1.0'
+gem 'grape', '~> 1.1', '>= 1.1.0'
 gem 'grape-entity', '~> 0.7.1'
-gem 'rack-cors', '~> 1.0.0', require: 'rack/cors'
+gem 'rack-cors', '~> 1.0.5', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.8.0'
@@ -101,29 +101,29 @@ gem 'graphiql-rails', '~> 1.4.10'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
 
 # HAML
 gem 'hamlit', '~> 2.8.8'
 
 # Files attachments
-gem 'carrierwave', '~> 1.2'
-gem 'mini_magick'
+gem 'carrierwave', '~> 1.3', '>= 1.3.2'
+gem 'mini_magick', '>= 4.9.4'
 
 # Drag and Drop UI
-gem 'dropzonejs-rails', '~> 0.7.1'
+gem 'dropzonejs-rails', '~> 0.7.2'
 
 # for backups
 gem 'fog-aws', '~> 2.0.1'
-gem 'fog-core', '~> 1.44'
+gem 'fog-core', '~> 1.45', '>= 1.45.0'
 gem 'fog-google', '~> 1.7.1'
-gem 'fog-local', '~> 0.3'
-gem 'fog-openstack', '~> 0.1'
+gem 'fog-local', '~> 0.3', '>= 0.3.1'
+gem 'fog-openstack', '~> 0.1', '>= 0.1.21'
 gem 'fog-rackspace', '~> 0.1.1'
 gem 'fog-aliyun', '~> 0.2.0'
 
 # for Google storage
-gem 'google-api-client', '~> 0.23'
+gem 'google-api-client', '~> 0.23', '>= 0.23.4'
 
 # for aws storage
 gem 'unf', '~> 0.1.4'
@@ -132,28 +132,28 @@ gem 'unf', '~> 0.1.4'
 gem 'seed-fu', '~> 2.3.7'
 
 # Markdown and HTML processing
-gem 'html-pipeline', '~> 2.8'
+gem 'html-pipeline', '~> 2.8', '>= 2.8.4'
 gem 'deckar01-task_list', '2.0.0'
 gem 'gitlab-markup', '~> 1.6.4'
-gem 'redcarpet', '~> 3.4'
-gem 'commonmarker', '~> 0.17'
+gem 'redcarpet', '~> 3.5', '>= 3.5.1'
+gem 'commonmarker', '~> 0.23', '>= 0.23.7'
 gem 'RedCloth', '~> 4.3.2'
-gem 'rdoc', '~> 6.0'
+gem 'rdoc', '~> 6.3', '>= 6.3.1'
 gem 'org-ruby', '~> 0.9.12'
 gem 'creole', '~> 0.5.0'
 gem 'wikicloth', '0.8.1'
-gem 'asciidoctor', '~> 1.5.6'
+gem 'asciidoctor', '~> 1.5.8'
 gem 'asciidoctor-plantuml', '0.0.8'
 gem 'rouge', '~> 3.1'
-gem 'truncato', '~> 0.7.9'
+gem 'truncato', '~> 0.7.11'
 gem 'bootstrap_form', '~> 2.7.0'
-gem 'nokogiri', '~> 1.8.2'
+gem 'nokogiri', '~> 1.13.9'
 
 # Calendar rendering
 gem 'icalendar'
 
 # Diffs
-gem 'diffy', '~> 3.1.0'
+gem 'diffy', '~> 3.4.1'
 
 # Application server
 group :unicorn do
@@ -162,22 +162,22 @@ group :unicorn do
 end
 
 # State machine
-gem 'state_machines-activerecord', '~> 0.5.1'
+gem 'state_machines-activerecord', '~> 0.6.0'
 
 # Issue tags
-gem 'acts-as-taggable-on', '~> 5.0'
+gem 'acts-as-taggable-on', '~> 5.0', '>= 5.0.0'
 
 # Background jobs
-gem 'sidekiq', '~> 5.1'
+gem 'sidekiq', '~> 6.2', '>= 6.2.1'
 gem 'sidekiq-cron', '~> 0.6.0'
 gem 'redis-namespace', '~> 1.6.0'
-gem 'sidekiq-limit_fetch', '~> 3.4', require: false
+gem 'sidekiq-limit_fetch', '~> 3.4', '>= 3.4.0', require: false
 
 # Cron Parser
-gem 'rufus-scheduler', '~> 3.4'
+gem 'rufus-scheduler', '~> 3.4', '>= 3.4.0'
 
 # HTTP requests
-gem 'httparty', '~> 0.13.3'
+gem 'httparty', '~> 0.21.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -206,10 +206,10 @@ gem 'redis', '~> 3.2'
 gem 'connection_pool', '~> 2.0'
 
 # HipChat integration
-gem 'hipchat', '~> 1.5.0'
+gem 'hipchat', '~> 1.5.2'
 
 # JIRA integration
-gem 'jira-ruby', '~> 1.4'
+gem 'jira-ruby', '~> 1.4', '>= 1.4.1'
 
 # Flowdock integration
 gem 'gitlab-flowdock-git-hook', '~> 1.0.1'
@@ -227,14 +227,14 @@ gem 'asana', '~> 0.6.0'
 gem 'ruby-fogbugz', '~> 0.2.1'
 
 # Kubernetes integration
-gem 'kubeclient', '~> 3.1.0'
+gem 'kubeclient', '~> 4.9.3'
 
 # Sanitize user input
-gem 'sanitize', '~> 4.6'
+gem 'sanitize', '~> 5.2', '>= 5.2.1'
 gem 'babosa', '~> 1.0.2'
 
 # Sanitizes SVG input
-gem 'loofah', '~> 2.2'
+gem 'loofah', '~> 2.19', '>= 2.19.1'
 
 # Working with license
 gem 'licensee', '~> 8.9'
@@ -261,13 +261,13 @@ gem 'chronic_duration', '~> 0.10.6'
 gem 'webpack-rails', '~> 0.9.10'
 gem 'rack-proxy', '~> 0.6.0'
 
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails', '~> 6.0.0'
 gem 'uglifier', '~> 2.7.2'
 
-gem 'addressable', '~> 2.5.2'
-gem 'font-awesome-rails', '~> 4.7'
-gem 'gemojione', '~> 3.3'
-gem 'gon', '~> 6.2'
+gem 'addressable', '~> 2.8.0'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.6'
+gem 'gemojione', '~> 3.3', '>= 3.3.0'
+gem 'gon', '~> 6.4', '>= 6.4.0'
 gem 'jquery-atwho-rails', '~> 1.3.2'
 gem 'request_store', '~> 1.3'
 gem 'select2-rails', '~> 3.5.9'
@@ -277,13 +277,13 @@ gem 'base32', '~> 0.3.0'
 # Sentry integration
 gem 'sentry-raven', '~> 2.7'
 
-gem 'premailer-rails', '~> 1.9.7'
+gem 'premailer-rails', '~> 1.10.3'
 
 # I18n
 gem 'ruby_parser', '~> 3.8', require: false
-gem 'rails-i18n', gem_versions['rails-i18n']
+gem 'rails-i18n', '>= 6.0.0', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.1'
@@ -300,7 +300,7 @@ gem 'peek-sidekiq', '~> 1.0.3'
 # Metrics
 group :metrics do
   gem 'method_source', '~> 0.8', require: false
-  gem 'influxdb', '~> 0.2', require: false
+  gem 'influxdb', '~> 0.2', '>= 0.2.3', require: false
 
   # Prometheus
   gem 'prometheus-client-mmap', '~> 0.9.4'
@@ -315,7 +315,7 @@ group :development do
   gem 'rblineprof', '~> 0.3.6', platform: :mri, require: false
 
   # Better errors handler
-  gem 'better_errors', '~> 2.1.0'
+  gem 'better_errors', '~> 2.8.0'
   gem 'binding_of_caller', '~> 0.7.2'
 
   # thin instead webrick
@@ -324,7 +324,7 @@ end
 
 group :development, :test do
   gem 'bootsnap', '~> 1.3'
-  gem 'bullet', '~> 5.5.0', require: !!ENV['ENABLE_BULLET']
+  gem 'bullet', '~> 5.5.1', require: !!ENV['ENABLE_BULLET']
   gem 'pry-byebug', '~> 3.4.1', platform: :mri
   gem 'pry-rails', '~> 0.3.4'
 
@@ -333,7 +333,7 @@ group :development, :test do
 
   gem 'database_cleaner', '~> 1.5.0'
   gem 'factory_bot_rails', '~> 4.8.2'
-  gem 'rspec-rails', '~> 3.7.0'
+  gem 'rspec-rails', '~> 3.7.2'
   gem 'rspec-retry', '~> 0.4.5'
   gem 'rspec_profiling', '~> 0.0.5'
   gem 'rspec-set', '~> 0.1.3'
@@ -345,11 +345,11 @@ group :development, :test do
   # Generate Fake data
   gem 'ffaker', '~> 2.4'
 
-  gem 'capybara', '~> 2.15'
-  gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'selenium-webdriver', '~> 3.12'
+  gem 'capybara', '~> 2.15', '>= 2.15.1'
+  gem 'capybara-screenshot', '~> 1.0.14'
+  gem 'selenium-webdriver', '~> 3.12', '>= 3.12.0'
 
-  gem 'spring', '~> 2.0.0'
+  gem 'spring', '~> 2.0.1'
   gem 'spring-commands-rspec', '~> 1.0.4'
 
   gem 'gitlab-styles', '~> 2.4', require: false
@@ -359,16 +359,16 @@ group :development, :test do
 
   gem 'scss_lint', '~> 0.56.0', require: false
   gem 'haml_lint', '~> 0.26.0', require: false
-  gem 'simplecov', '~> 0.14.0', require: false
+  gem 'simplecov', '~> 0.14.1', require: false
   gem 'flay', '~> 2.10.0', require: false
   gem 'bundler-audit', '~> 0.5.0', require: false
 
   gem 'benchmark-ips', '~> 2.3.0', require: false
 
-  gem 'license_finder', '~> 3.1', require: false
-  gem 'knapsack', '~> 1.16'
+  gem 'license_finder', '~> 3.1', '>= 3.1.1', require: false
+  gem 'knapsack', '~> 1.16', '>= 1.16.0'
 
-  gem 'activerecord_sane_schema_dumper', gem_versions['activerecord_sane_schema_dumper']
+  gem 'activerecord_sane_schema_dumper', '>= 1.0', gem_versions['activerecord_sane_schema_dumper']
 
   gem 'stackprof', '~> 0.2.10', require: false
 
@@ -383,13 +383,13 @@ group :test do
   gem 'json-schema', '~> 2.8.0'
   gem 'webmock', '~> 2.3.2'
   gem 'rails-controller-testing' if rails5? # Rails5 only gem.
-  gem 'test_after_commit', '~> 1.1' unless rails5? # Remove this gem when migrated to rails 5.0. It's been integrated to rails 5.0.
+  gem 'test_after_commit', '~> 1.1', '>= 1.1.0' # Remove this gem when migrated to rails 5.0. It's been integrated to rails 5.0.
   gem 'sham_rack', '~> 1.3.6'
   gem 'concurrent-ruby', '~> 1.0.5'
   gem 'test-prof', '~> 0.2.5'
 end
 
-gem 'octokit', '~> 4.9'
+gem 'octokit', '~> 4.9', '>= 4.9.0'
 
 gem 'mail_room', '~> 0.9.1'
 
@@ -397,10 +397,10 @@ gem 'email_reply_trimmer', '~> 0.1'
 gem 'html2text'
 
 gem 'ruby-prof', '~> 0.17.0'
-gem 'rbtrace', '~> 0.4', require: false
+gem 'rbtrace', '~> 0.4', '>= 0.4.10', require: false
 
 # OAuth
-gem 'oauth2', '~> 1.4'
+gem 'oauth2', '~> 1.4', '>= 1.4.11'
 
 # Health check
 gem 'health_check', '~> 2.6.0'
@@ -424,18 +424,18 @@ gem 'gitaly-proto', '~> 0.113.0', require: 'gitaly'
 gem 'grpc', '~> 1.11.0'
 
 # Locked until https://github.com/google/protobuf/issues/4210 is closed
-gem 'google-protobuf', '= 3.5.1'
+gem 'google-protobuf', '= 3.19.6'
 
 gem 'toml-rb', '~> 1.0.0', require: false
 
 # Feature toggles
 gem 'flipper', '~> 0.13.0'
-gem 'flipper-active_record', '~> 0.13.0'
-gem 'flipper-active_support_cache_store', '~> 0.13.0'
+gem 'flipper-active_record', '~> 0.17.1'
+gem 'flipper-active_support_cache_store', '~> 0.17.1'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
-gem 'grape_logging', '~> 1.7'
+gem 'lograge', '~> 0.10', '>= 0.10.0'
+gem 'grape_logging', '~> 1.7', '>= 1.7.0'
 
 # Asset synchronization
-gem 'asset_sync', '~> 2.4'
+gem 'asset_sync', '~> 2.4', '>= 2.4.0'
