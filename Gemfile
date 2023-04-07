@@ -168,10 +168,10 @@ gem 'state_machines-activerecord', '~> 0.5.1'
 gem 'acts-as-taggable-on', '~> 5.0'
 
 # Background jobs
-gem 'sidekiq', '~> 5.1'
+gem 'sidekiq', '~> 7.0', '>= 7.0.8'
 gem 'sidekiq-cron', '~> 0.6.0'
 gem 'redis-namespace', '~> 1.6.0'
-gem 'sidekiq-limit_fetch', '~> 3.4', require: false
+gem 'sidekiq-limit_fetch', '~> 3.4', '>= 3.4.0', require: false
 
 # Cron Parser
 gem 'rufus-scheduler', '~> 3.4'
