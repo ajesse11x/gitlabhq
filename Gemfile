@@ -168,10 +168,10 @@ gem 'state_machines-activerecord', '~> 0.5.1'
 gem 'acts-as-taggable-on', '~> 5.0'
 
 # Background jobs
-gem 'sidekiq', '~> 5.1'
-gem 'sidekiq-cron', '~> 0.6.0'
+gem 'sidekiq', '~> 7.1', '>= 7.1.3'
+gem 'sidekiq-cron', '~> 0.6.1'
 gem 'redis-namespace', '~> 1.6.0'
-gem 'sidekiq-limit_fetch', '~> 3.4', require: false
+gem 'sidekiq-limit_fetch', '~> 4.0', '>= 4.0.0', require: false
 
 # Cron Parser
 gem 'rufus-scheduler', '~> 3.4'
@@ -295,7 +295,7 @@ gem 'peek-mysql2', '~> 1.1.0', group: :mysql
 gem 'peek-pg', '~> 1.3.0', group: :postgres
 gem 'peek-rblineprof', '~> 0.2.0'
 gem 'peek-redis', '~> 1.2.0'
-gem 'peek-sidekiq', '~> 1.0.3'
+gem 'peek-sidekiq', '~> 1.0.4'
 
 # Metrics
 group :metrics do
