@@ -28,7 +28,7 @@ gem 'mysql2', '~> 0.4.10', group: :mysql
 gem 'pg', '~> 0.18.2', group: :postgres
 
 gem 'rugged', '~> 0.27'
-gem 'grape-path-helpers', '~> 1.0'
+gem 'grape-path-helpers', '~> 1.1', '>= 1.1.0'
 
 gem 'faraday', '~> 0.12'
 
@@ -90,7 +90,7 @@ gem 'github-linguist', '~> 5.3.3', require: 'linguist'
 
 # API
 gem 'grape', '~> 1.0'
-gem 'grape-entity', '~> 0.7.1'
+gem 'grape-entity', '~> 0.8.0'
 gem 'rack-cors', '~> 1.0.0', require: 'rack/cors'
 
 # GraphQL API
