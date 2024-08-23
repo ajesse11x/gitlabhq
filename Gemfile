@@ -16,7 +16,7 @@ gem 'rails', gem_versions['rails']
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
 gem 'sprockets', '~> 3.7.0'
 
@@ -33,9 +33,9 @@ gem 'grape-path-helpers', '~> 1.0'
 gem 'faraday', '~> 0.12'
 
 # Authentication libraries
-gem 'devise', '~> 4.4'
-gem 'doorkeeper', '~> 4.3'
-gem 'doorkeeper-openid_connect', '~> 1.5'
+gem 'devise', '~> 4.7', '>= 4.7.0'
+gem 'doorkeeper', '~> 4.4', '>= 4.4.0'
+gem 'doorkeeper-openid_connect', '~> 1.5', '>= 1.5.1'
 gem 'omniauth', '~> 1.8'
 gem 'omniauth-auth0', '~> 2.0.0'
 gem 'omniauth-azure-oauth2', '~> 0.0.9'
@@ -59,13 +59,13 @@ gem 'recaptcha', '~> 3.0', require: 'recaptcha/rails'
 gem 'akismet', '~> 2.0'
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 3.0.0'
+gem 'devise-two-factor', '~> 3.0.1'
 gem 'rqrcode-rails3', '~> 0.1.7'
 gem 'attr_encrypted', '~> 3.1.0'
 gem 'u2f', '~> 0.2.1'
 
 # GitLab Pages
-gem 'validates_hostname', '~> 1.0.6'
+gem 'validates_hostname', '~> 1.0.7'
 
 # Browser detection
 gem 'browser', '~> 2.2'
@@ -95,13 +95,13 @@ gem 'rack-cors', '~> 1.0.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.8.0'
-gem 'graphiql-rails', '~> 1.4.10'
+gem 'graphiql-rails', '~> 1.4.11'
 
 # Disable strong_params so that Mash does not respond to :permitted?
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.1', '>= 1.1.0'
 
 # HAML
 gem 'hamlit', '~> 2.8.8'
@@ -111,7 +111,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'mini_magick'
 
 # Drag and Drop UI
-gem 'dropzonejs-rails', '~> 0.7.1'
+gem 'dropzonejs-rails', '~> 0.7.3'
 
 # for backups
 gem 'fog-aws', '~> 2.0.1'
@@ -129,7 +129,7 @@ gem 'google-api-client', '~> 0.23'
 gem 'unf', '~> 0.1.4'
 
 # Seed data
-gem 'seed-fu', '~> 2.3.7'
+gem 'seed-fu', '~> 2.3.9'
 
 # Markdown and HTML processing
 gem 'html-pipeline', '~> 2.8'
@@ -162,7 +162,7 @@ group :unicorn do
 end
 
 # State machine
-gem 'state_machines-activerecord', '~> 0.5.1'
+gem 'state_machines-activerecord', '~> 0.6.0'
 
 # Issue tags
 gem 'acts-as-taggable-on', '~> 5.0'
@@ -258,7 +258,7 @@ gem 'fast_blank'
 gem 'chronic', '~> 0.10.2'
 gem 'chronic_duration', '~> 0.10.6'
 
-gem 'webpack-rails', '~> 0.9.10'
+gem 'webpack-rails', '~> 0.9.11'
 gem 'rack-proxy', '~> 0.6.0'
 
 gem 'sass-rails', '~> 5.0.6'
@@ -267,7 +267,7 @@ gem 'uglifier', '~> 2.7.2'
 gem 'addressable', '~> 2.5.2'
 gem 'font-awesome-rails', '~> 4.7'
 gem 'gemojione', '~> 3.3'
-gem 'gon', '~> 6.2'
+gem 'gon', '~> 6.2', '>= 6.2.1'
 gem 'jquery-atwho-rails', '~> 1.3.2'
 gem 'request_store', '~> 1.3'
 gem 'select2-rails', '~> 3.5.9'
@@ -283,19 +283,19 @@ gem 'premailer-rails', '~> 1.9.7'
 gem 'ruby_parser', '~> 3.8', require: false
 gem 'rails-i18n', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.1'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.1'
 
 # Perf bar
-gem 'peek', '~> 1.0.1'
+gem 'peek', '~> 1.1.0'
 gem 'peek-gc', '~> 0.0.2'
-gem 'peek-mysql2', '~> 1.1.0', group: :mysql
+gem 'peek-mysql2', '~> 1.2.0', group: :mysql
 gem 'peek-pg', '~> 1.3.0', group: :postgres
 gem 'peek-rblineprof', '~> 0.2.0'
 gem 'peek-redis', '~> 1.2.0'
-gem 'peek-sidekiq', '~> 1.0.3'
+gem 'peek-sidekiq', '~> 1.0.4'
 
 # Metrics
 group :metrics do
@@ -311,7 +311,7 @@ group :development do
   gem 'foreman', '~> 0.84.0'
   gem 'brakeman', '~> 4.2', require: false
 
-  gem 'letter_opener_web', '~> 1.3.0'
+  gem 'letter_opener_web', '~> 1.3.1'
   gem 'rblineprof', '~> 0.3.6', platform: :mri, require: false
 
   # Better errors handler
@@ -332,10 +332,10 @@ group :development, :test do
   gem 'fuubar', '~> 2.2.0'
 
   gem 'database_cleaner', '~> 1.5.0'
-  gem 'factory_bot_rails', '~> 4.8.2'
-  gem 'rspec-rails', '~> 3.7.0'
+  gem 'factory_bot_rails', '~> 4.10.0'
+  gem 'rspec-rails', '~> 3.8.0'
   gem 'rspec-retry', '~> 0.4.5'
-  gem 'rspec_profiling', '~> 0.0.5'
+  gem 'rspec_profiling', '~> 0.0.6'
   gem 'rspec-set', '~> 0.1.3'
   gem 'rspec-parameterized', require: false
 
@@ -368,7 +368,7 @@ group :development, :test do
   gem 'license_finder', '~> 3.1', require: false
   gem 'knapsack', '~> 1.16'
 
-  gem 'activerecord_sane_schema_dumper', gem_versions['activerecord_sane_schema_dumper']
+  gem 'activerecord_sane_schema_dumper', '>= 1.0', gem_versions['activerecord_sane_schema_dumper']
 
   gem 'stackprof', '~> 0.2.10', require: false
 
@@ -434,7 +434,7 @@ gem 'flipper-active_record', '~> 0.13.0'
 gem 'flipper-active_support_cache_store', '~> 0.13.0'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
+gem 'lograge', '~> 0.11', '>= 0.11.0'
 gem 'grape_logging', '~> 1.7'
 
 # Asset synchronization
