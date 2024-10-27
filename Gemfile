@@ -114,7 +114,7 @@ gem 'mini_magick'
 gem 'dropzonejs-rails', '~> 0.7.1'
 
 # for backups
-gem 'fog-aws', '~> 2.0.1'
+gem 'fog-aws', '~> 3.29.0'
 gem 'fog-core', '~> 1.44'
 gem 'fog-google', '~> 1.7.1'
 gem 'fog-local', '~> 0.3'
