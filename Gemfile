@@ -12,7 +12,7 @@ gem_versions['rails-i18n']                      = rails5? ? '~> 5.1'   : '~> 4.0
 
 source 'https://rubygems.org'
 
-gem 'rails', gem_versions['rails']
+gem 'rails', '>= 7.0.0', gem_versions['rails']
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Responders respond_to and respond_with
@@ -95,7 +95,7 @@ gem 'rack-cors', '~> 1.0.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.8.0'
-gem 'graphiql-rails', '~> 1.4.10'
+gem 'graphiql-rails', '~> 1.10.0'
 
 # Disable strong_params so that Mash does not respond to :permitted?
 gem 'hashie-forbidden_attributes'
@@ -132,7 +132,7 @@ gem 'unf', '~> 0.1.4'
 gem 'seed-fu', '~> 2.3.7'
 
 # Markdown and HTML processing
-gem 'html-pipeline', '~> 2.8'
+gem 'html-pipeline', '~> 3.0', '>= 3.0.0'
 gem 'deckar01-task_list', '2.0.0'
 gem 'gitlab-markup', '~> 1.6.4'
 gem 'redcarpet', '~> 3.4'
@@ -147,7 +147,7 @@ gem 'asciidoctor-plantuml', '0.0.8'
 gem 'rouge', '~> 3.1'
 gem 'truncato', '~> 0.7.9'
 gem 'bootstrap_form', '~> 2.7.0'
-gem 'nokogiri', '~> 1.8.2'
+gem 'nokogiri', '~> 1.15.7'
 
 # Calendar rendering
 gem 'icalendar'
@@ -230,7 +230,7 @@ gem 'ruby-fogbugz', '~> 0.2.1'
 gem 'kubeclient', '~> 3.1.0'
 
 # Sanitize user input
-gem 'sanitize', '~> 4.6'
+gem 'sanitize', '~> 6.0', '>= 6.0.0'
 gem 'babosa', '~> 1.0.2'
 
 # Sanitizes SVG input
@@ -261,7 +261,7 @@ gem 'chronic_duration', '~> 0.10.6'
 gem 'webpack-rails', '~> 0.9.10'
 gem 'rack-proxy', '~> 0.6.0'
 
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails', '~> 6.0.0'
 gem 'uglifier', '~> 2.7.2'
 
 gem 'addressable', '~> 2.5.2'
@@ -403,7 +403,7 @@ gem 'rbtrace', '~> 0.4', require: false
 gem 'oauth2', '~> 1.4'
 
 # Health check
-gem 'health_check', '~> 2.6.0'
+gem 'health_check', '~> 2.8.0'
 
 # System information
 gem 'vmstat', '~> 2.3.0'
