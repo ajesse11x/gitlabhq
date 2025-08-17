@@ -12,7 +12,7 @@ gem_versions['rails-i18n']                      = rails5? ? '~> 5.1'   : '~> 4.0
 
 source 'https://rubygems.org'
 
-gem 'rails', gem_versions['rails']
+gem 'rails', '>= 7.1.5.2', gem_versions['rails']
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Responders respond_to and respond_with
@@ -21,7 +21,7 @@ gem 'responders', '~> 2.0'
 gem 'sprockets', '~> 3.7.0'
 
 # Default values for AR models
-gem 'default_value_for', gem_versions['default_value_for']
+gem 'default_value_for', '>= 3.6.0', gem_versions['default_value_for']
 
 # Supported DBs
 gem 'mysql2', '~> 0.4.10', group: :mysql
@@ -65,7 +65,7 @@ gem 'attr_encrypted', '~> 3.1.0'
 gem 'u2f', '~> 0.2.1'
 
 # GitLab Pages
-gem 'validates_hostname', '~> 1.0.6'
+gem 'validates_hostname', '~> 1.0.7'
 
 # Browser detection
 gem 'browser', '~> 2.2'
@@ -101,7 +101,7 @@ gem 'graphiql-rails', '~> 1.4.10'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.1', '>= 1.1.0'
 
 # HAML
 gem 'hamlit', '~> 2.8.8'
@@ -111,7 +111,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'mini_magick'
 
 # Drag and Drop UI
-gem 'dropzonejs-rails', '~> 0.7.1'
+gem 'dropzonejs-rails', '~> 0.7.3'
 
 # for backups
 gem 'fog-aws', '~> 2.0.1'
@@ -129,7 +129,7 @@ gem 'google-api-client', '~> 0.23'
 gem 'unf', '~> 0.1.4'
 
 # Seed data
-gem 'seed-fu', '~> 2.3.7'
+gem 'seed-fu', '~> 2.3.9'
 
 # Markdown and HTML processing
 gem 'html-pipeline', '~> 2.8'
@@ -162,10 +162,10 @@ group :unicorn do
 end
 
 # State machine
-gem 'state_machines-activerecord', '~> 0.5.1'
+gem 'state_machines-activerecord', '~> 0.6.0'
 
 # Issue tags
-gem 'acts-as-taggable-on', '~> 5.0'
+gem 'acts-as-taggable-on', '~> 10.0', '>= 10.0.0'
 
 # Background jobs
 gem 'sidekiq', '~> 5.1'
@@ -283,7 +283,7 @@ gem 'premailer-rails', '~> 1.9.7'
 gem 'ruby_parser', '~> 3.8', require: false
 gem 'rails-i18n', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.1'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.1'
@@ -335,7 +335,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 4.8.2'
   gem 'rspec-rails', '~> 3.7.0'
   gem 'rspec-retry', '~> 0.4.5'
-  gem 'rspec_profiling', '~> 0.0.5'
+  gem 'rspec_profiling', '~> 0.0.6'
   gem 'rspec-set', '~> 0.1.3'
   gem 'rspec-parameterized', require: false
 
@@ -403,7 +403,7 @@ gem 'rbtrace', '~> 0.4', require: false
 gem 'oauth2', '~> 1.4'
 
 # Health check
-gem 'health_check', '~> 2.6.0'
+gem 'health_check', '~> 2.7.0'
 
 # System information
 gem 'vmstat', '~> 2.3.0'
@@ -430,7 +430,7 @@ gem 'toml-rb', '~> 1.0.0', require: false
 
 # Feature toggles
 gem 'flipper', '~> 0.13.0'
-gem 'flipper-active_record', '~> 0.13.0'
+gem 'flipper-active_record', '~> 0.23.0'
 gem 'flipper-active_support_cache_store', '~> 0.13.0'
 
 # Structured logging
