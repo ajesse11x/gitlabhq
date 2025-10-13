@@ -1,15 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    rack (2.0.4)
+    rack (3.2.3)
     rake (12.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack
+  rack (>= 2.2.20)
   rake
 
 BUNDLED WITH
-   1.16.1
+   2.3.27
