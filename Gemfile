@@ -177,7 +177,7 @@ gem 'sidekiq-limit_fetch', '~> 3.4', require: false
 gem 'rufus-scheduler', '~> 3.4'
 
 # HTTP requests
-gem 'httparty', '~> 0.13.3'
+gem 'httparty', '~> 0.24.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -206,7 +206,7 @@ gem 'redis', '~> 3.2'
 gem 'connection_pool', '~> 2.0'
 
 # HipChat integration
-gem 'hipchat', '~> 1.5.0'
+gem 'hipchat', '~> 1.5.3'
 
 # JIRA integration
 gem 'jira-ruby', '~> 1.4'
